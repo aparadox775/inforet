@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-$(=#af6(0i_fwkrho6+s0il1b&*p(vn-6*ofdrv)+v5-mr1nn4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["inforet.glitch.me"]
+ALLOWED_HOSTS = ["inforet.glitch.me",'127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'search.apps.SearchConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
